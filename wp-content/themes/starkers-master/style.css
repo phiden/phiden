@@ -1,0 +1,232 @@
+/*
+Theme Name: 	Starkers
+Theme URI: 		http://viewportindustries.com/products/starkers
+Description: 	The totally nude Wordpress theme!
+Version: 		4.0
+Author: 		Elliot Jay Stocks & Keir Whitaker
+Author URI: 	http://viewportindustries.com
+Tags: 			starkers, naked, clean, basic
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+@import "css/reset.css";
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+body,
+input,
+textarea 			{ font-family: 'Josefin Slab', serif;/* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+					{ /* Place your styles here for all widths greater than 400px */ }
+
+}
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+}
+
+body {
+	
+	background-image:url('images/p5_peach.gif');
+	color:#1a1a1a;
+	
+}
+
+header {
+	
+	margin-bottom:20px;
+	margin-top:20px;
+	
+}
+
+header h2 {
+	
+	text-align: center;
+	font-size:150%;
+	font-weight: normal;
+}
+
+header a {
+	
+	text-decoration: none;
+}
+
+p {
+	
+	margin-bottom:10px;
+	line-height:150%;
+}
+
+a {
+	
+	color:#f25757;
+	
+}
+
+img {
+	
+	vertical-align: middle;
+	
+	margin-top:5px;
+	margin-bottom:5px;
+	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h1 {
+	
+	text-align: center;
+	font-size:250%;
+}
+
+/*navigation*/
+
+ul#nav {
+	
+	margin:15px 0 15px 0;
+	font-size:120%;
+	text-align:center;
+}
+
+ul#nav li{
+	
+	display:inline;
+	margin:0 5% 0 5%;
+}
+
+/*end navigation*/
+
+
+
+.pin {
+	
+	margin-top:5px;
+	margin-bottom:15px;
+	text-align: center;
+}
+
+article, #page_content {
+	
+	width:85%;
+	margin:20px auto;
+	background-color: rgba(255, 255, 255, .8);
+	padding:20px 20px 20px 20px;
+
+	}
+	
+article h2 {
+	
+	font-size:150%;
+	font-weight: normal;
+}
+
+article h2 a {
+	
+	text-decoration: none;
+
+}
+
+#data {
+	
+	margin-bottom:10px;
+	margin-top:3px;
+	font-size:80%;
+}
+
+footer {
+	
+	text-align: center;
+	margin-bottom:10px;
+}
+
+/* MOBILE PORTRAIT */
+@media only screen and (min-width: 320px) {
+
+	body {
+		
+		width:100%;
+		
+	}
+	
+	article p{
+		
+		font-size:110%;
+	}
+
+	img {
+		
+		width:100%;
+		height:100%;
+	}
+	
+	.etsy-shop-listing-table {
+		
+		width:320px;
+	}
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) { 
+	
+	body {
+		
+		width:75%;
+		margin:0 auto;
+	}	
+}
